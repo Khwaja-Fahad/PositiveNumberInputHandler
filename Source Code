@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+int main() {
+    int x;
+
+    do {
+        // Prompt the user to enter a positive number
+        printf("Enter a positive number (enter 0 to exit): ");
+        scanf("%d", &x);
+
+        if (x < 0) {
+            // Display an error message for negative values
+            printf("Error: Negative value not allowed.\n");
+        } else {
+            // Perform desired operations on x
+            printf("The input number is: %d\n", x);
+        }
+
+    } while (x != 0);
+
+    // Display a message when the program ends
+    printf("Program ended.\n");
+    
+    return 0;
+}
